@@ -121,6 +121,20 @@ main {
      object-fit: cover;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .title {
   font-size: 53px;
   font-weight: 700;
@@ -247,11 +261,13 @@ main {
 }
 
 .product-card__icon-wrap {
+  display: block;
   width: 21px;
   cursor: pointer;
 }
 
 .product-card__icon {
+  display: block;
   padding-bottom: 85.71%;
 }
 
@@ -1062,6 +1078,7 @@ main {
 }
 
 .reviews__arrow-prev {
+  display: block;
   padding-bottom: 52%;
 }
 
@@ -1088,6 +1105,7 @@ main {
 }
 
 .reviews__arrow-next {
+  display: block;
   padding-bottom: 52%;
 }
 
@@ -1532,6 +1550,7 @@ main {
 }
 
 .catalog-video__play-icon {
+  display: block;
   padding-bottom: 76%;
 }
 
@@ -1690,6 +1709,7 @@ main {
   position: absolute;
   top: 50%;
   left: 0;
+  display: block;
   width: 52px;
   height: 52px;
   border: 1px solid #000;
@@ -1751,6 +1771,7 @@ main {
   position: absolute;
   top: 50%;
   left: 0;
+  display: block;
   width: 52px;
   height: 52px;
   border: 1px solid #000;
@@ -1837,6 +1858,7 @@ input[type=number] {
   position: absolute;
   top: 50%;
   right: 4px;
+  display: block;
   width: 32px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -1845,6 +1867,7 @@ input[type=number] {
 }
 
 .form__contacts-icon {
+  display: block;
   padding-top: 75%;
 }
 

@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="files/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <style>
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
     <title>Заказ</title>
 </head>
 
@@ -92,6 +98,7 @@
                 </div>
             </section>
             <section class="form-main">
+                <h2 class="form-main__title visually-hidden">Форма заказа</h2>
                 <div class="_container">
                     <div class="form-main__container">
                         <p class="form-main__description">
@@ -110,12 +117,12 @@
                                     <input class="form__type-input form__input" type="radio" name="type"
                                         value="accessory">
                                     <span class="form__type-label-text form__label-text">Аксессуар для интерьера</span>
-                                    <div class="form__type-range-marker"></div>
+                                    <span class="form__type-range-marker"></span>
                                 </label>
                                 <label class="form__type-label form__label">
                                     <input class="form__type-input form__input" type="radio" name="type" value="toy">
                                     <span class="form__type-label-text form__label-text">Детская игрушка</span>
-                                    <div class="form__type-range-marker"></div>
+                                    <span class="form__type-range-marker"></span>
                                 </label>
                             </div>
                         </div>
@@ -131,42 +138,42 @@
                                                 aria-hidden="true">Цвет</span>
                                             <input class="form__color-input form__input" type="checkbox" name="white">
                                             <span class="form__color-label-text form__label-text">Белый</span>
-                                            <div class="form__color-checkbox-marker"></div>
+                                            <span class="form__color-checkbox-marker"></span>
                                         </label>
                                     </li>
                                     <li class="form__color-item">
                                         <label class="form__color-label form__label">
                                             <input class="form__color-input form__input" type="checkbox" name="black">
                                             <span class="form__color-label-text form__label-text">Черный</span>
-                                            <div class="form__color-checkbox-marker"></div>
+                                            <span class="form__color-checkbox-marker"></span>
                                         </label>
                                     </li>
                                     <li class="form__color-item">
                                         <label class="form__color-label form__label">
                                             <input class="form__color-input form__input" type="checkbox" name="gray">
                                             <span class="form__color-label-text form__label-text">Серый</span>
-                                            <div class="form__color-checkbox-marker"></div>
+                                            <span class="form__color-checkbox-marker"></span>
                                         </label>
                                     </li>
                                     <li class="form__color-item">
                                         <label class="form__color-label form__label">
                                             <input class="form__color-input form__input" type="checkbox" name="pink">
                                             <span class="form__color-label-text form__label-text">Розовый</span>
-                                            <div class="form__color-checkbox-marker"></div>
+                                            <span class="form__color-checkbox-marker"></span>
                                         </label>
                                     </li>
                                     <li class="form__color-item">
                                         <label class="form__color-label form__label">
                                             <input class="form__color-input form__input" type="checkbox" name="tiffany">
                                             <span class="form__color-label-text form__label-text">Тиффани</span>
-                                            <div class="form__color-checkbox-marker"></div>
+                                            <span class="form__color-checkbox-marker"></span>
                                         </label>
                                     </li>
                                     <li class="form__color-item">
                                         <label class="form__color-label form__label">
                                             <input class="form__color-input form__input" type="checkbox" name="orange">
                                             <span class="form__color-label-text form__label-text">Оранжевый</span>
-                                            <div class="form__color-checkbox-marker"></div>
+                                            <span class="form__color-checkbox-marker"></span>
                                         </label>
                                     </li>
                                 </ul>
@@ -204,13 +211,13 @@
                                     <span class="form__contacts-title form__title form__title--color">Тел</span>
                                     <input type="number" name="phone" class="form__contacts-input form__input-text"
                                         placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                                    <div class="form__contacts-icon-wrap">
-                                        <div class="form__contacts-icon _ibg">
+                                    <span class="form__contacts-icon-wrap">
+                                        <span class="form__contacts-icon _ibg">
                                             <svg>
                                                 <use href="img/icons/icons.svg#contacts-phone"></use>
                                             </svg>
-                                        </div>
-                                    </div>
+                                        </span>
+                                    </span>
                                 </label>
                             </div>
                             <div class="form__container form__container--contacts">
@@ -218,13 +225,13 @@
                                     <span class="form__contacts-title form__title form__title--color">E-mail</span>
                                     <input type="email" name="email" class="form__contacts-input form__input-text"
                                         placeholder="Ваш Email*" required>
-                                    <div class="form__contacts-icon-wrap">
-                                        <div class="form__contacts-icon _ibg">
+                                    <span class="form__contacts-icon-wrap">
+                                        <span class="form__contacts-icon _ibg">
                                             <svg>
                                                 <use href="img/icons/icons.svg#contacts-email"></use>
                                             </svg>
-                                        </div>
-                                    </div>
+                                        </span>
+                                    </span>
                                 </label>
                             </div>
                         </div>
@@ -256,97 +263,95 @@
                             </div>
                         </div>
                     </div>
-
                 </form>
-    </div>
-    </section>
+            </section>
 
-    </main>
-    <footer class="footer">
-        <div class="_container">
-            <div class="footer__body">
-                <div class="footer__logo logo-footer">
-                    <a href="/" class="logo-footer__image">
-                        <div class="logo-footer__img _ibg">
-                            <svg>
-                                <use href="img/icons/icons.svg#logo-footer"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-                <div class="footer__social social">
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a href="#" class="social__link">
-                                <div class="social__img _ibg">
-                                    <svg>
-                                        <use href="img/icons/icons.svg#instagram"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link">
-                                <div class="social__img _ibg">
-                                    <svg>
-                                        <use href="img/icons/icons.svg#facebook"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link">
-                                <div class="social__img _ibg">
-                                    <svg>
-                                        <use href="img/icons/icons.svg#twitter"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__developer developer">
-                    <a href="#" class="developer__link">
-                        <span class="developer__label">Разработано</span>
-                        <div class="developer__image">
-                            <div class="developer__img _ibg">
+        </main>
+        <footer class="footer">
+            <div class="_container">
+                <div class="footer__body">
+                    <div class="footer__logo logo-footer">
+                        <a href="/" class="logo-footer__image">
+                            <div class="logo-footer__img _ibg">
                                 <svg>
-                                    <use href="img/icons/icons.svg#htmlacademy"></use>
+                                    <use href="img/icons/icons.svg#logo-footer"></use>
                                 </svg>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    <div class="footer__social social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <div class="social__img _ibg">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <div class="social__img _ibg">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <div class="social__img _ibg">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__developer developer">
+                        <a href="#" class="developer__link">
+                            <span class="developer__label">Разработано</span>
+                            <div class="developer__image">
+                                <div class="developer__img _ibg">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#htmlacademy"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <div class="popap-cart__wrap">
-        <div class="popap-cart">
-            <h4 class="popap-cart__title">Добавить в корзину</h4>
-            <span class="popap-cart__description">Выберите размер:</span>
-            <form class="popap-cart__form" action="#">
-                <div class="popap-cart__size">
-                    <label class="popap-cart__size-button">
-                        <span>s</span>
-                        <input class="popap-cart__radio" type="radio" name="size" value="s">
-                    </label>
-                    <label class="popap-cart__size-button">
-                        <span>m</span>
-                        <input class="popap-cart__radio" type="radio" name="size" value="m">
-                    </label>
-                    <label class="popap-cart__size-button">
-                        <span>l</span>
-                        <input class="popap-cart__radio" type="radio" name="size" value="l">
-                    </label>
-                </div>
-                <div class="popap-cart__error-wrap"></div>
-                <div class="popap-cart__button-wrap button-wrap">
-                    <button class="popap-cart__button button button--color">Добавить</button>
-                </div>
-            </form>
+        <div class="popap-cart__wrap">
+            <div class="popap-cart">
+                <h4 class="popap-cart__title">Добавить в корзину</h4>
+                <span class="popap-cart__description">Выберите размер:</span>
+                <form class="popap-cart__form" action="#">
+                    <div class="popap-cart__size">
+                        <label class="popap-cart__size-button">
+                            <span>s</span>
+                            <input class="popap-cart__radio" type="radio" name="size" value="s">
+                        </label>
+                        <label class="popap-cart__size-button">
+                            <span>m</span>
+                            <input class="popap-cart__radio" type="radio" name="size" value="m">
+                        </label>
+                        <label class="popap-cart__size-button">
+                            <span>l</span>
+                            <input class="popap-cart__radio" type="radio" name="size" value="l">
+                        </label>
+                    </div>
+                    <div class="popap-cart__error-wrap"></div>
+                    <div class="popap-cart__button-wrap button-wrap">
+                        <button class="popap-cart__button button button--color">Добавить</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
     </div>
     <script src="files/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
